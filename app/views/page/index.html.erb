@@ -1,0 +1,195 @@
+<div class="container">
+  <div class="row index-header">
+  	<div class="col-sm-4 col-md-4 col-lg-4">
+  		<p>
+	  		<span class="glyphicon glyphicon-earphone"></span> +91 9738 298305&nbsp;&nbsp;
+	  		<span class="glyphicon glyphicon-envelope"></span> kranti@yinc.com
+  		</p>
+  	</div>
+  	<div class="col-sm-4 col-md-4 col-lg-4">
+  		<h1>Shop Now</h1>
+  	</div>
+  	<div class="col-sm-4 col-md-4 col-lg-4">
+  		<p class="text-right">
+	  		<input type="text" name="lastname" placeholder="Search" class="search">&nbsp;&nbsp;
+	  		<span class="glyphicon glyphicon-shopping-cart"></span>
+  		</p>
+  	</div>
+  </div>
+  <div class="menu">
+  	<div class="xs-menu-cont">
+			<a id="menutoggle"><i class="fa fa-align-justify"></i> </a>
+			<nav class="xs-menu displaynone">
+				<ul>
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Services</a>
+					</li>
+					<li>
+						<a href="#">Team</a>
+					</li>
+					<li>
+						<a href="#">Portfolio</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<nav class="menu">
+			<ul>
+				<li class="active">
+					<a href="#">Home</a>
+				</li>
+				<li class="drop-down">
+					<a href="#">Shop</a>
+				 
+					<div class="mega-menu fadeIn animated">
+						<div class="mm-6column">
+							<span class="left-images">
+								<%= image_tag  "banner.jpg", style: "width:330px" %>
+								<p>Most Popular Styles </p>
+							</span>
+							<span class="categories-list">
+								<ul>
+									<span>READY TO WEAR</span>
+									<li>Dresses</li>
+									<li>Tops</li>
+									<li>Skirts</li>
+									<li>Playsuits</li>
+									<li>Pants</li>
+									<li>Shorts</li>
+									<li>Coats</li>
+									<li><a class="mm-view-more" href="#">View more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+								</ul>
+							</span>
+						</div>
+						<div class="mm-3column">
+							<span class="categories-list">
+								<ul>
+									 <span>SWIM & RESORT</span>
+										<li>Dresses & Kimonos</li>
+										<li>Tops</li>
+										<li>Skirts</li>
+										<li>Playsuits</li>
+										<li>Pants</li>
+										<li>Shorts</li>
+										<li>Separates</li>
+										<li><a class="mm-view-more" href="#">View more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+								</ul>
+							</span>							
+						</div>
+						<div class="mm-3column">
+							<span class="categories-list">
+								<ul>
+									<span>HOME</span>
+									<li>Candles</li>
+									<li>Décor</li>
+									<li>Dining</li>
+									<li>Beach</li>
+									<li>Gifts</li>
+							   	<li><a class="mm-view-more" href="#">View more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+								</ul>
+							</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#">World of Talulah</a>
+				</li>
+				<li>
+					<a href="#">Subscribe</a>
+				</li>
+				<li>
+					<a href="#">New Arrivals</a>
+				</li>
+				<li>
+					<a href="#">Sale</a>
+
+				</li>
+			</ul>
+		</nav>
+  </div>
+  <div id="slider">
+		<figure>
+			<%= image_tag 'img1.jpg' %>
+			<%= image_tag 'img2.jpg' %>
+			<%= image_tag 'img3.jpg' %>
+			<%= image_tag 'img4.jpg' %>
+			<%= image_tag 'img5.jpg' %>
+		</figure>
+  </div>
+  
+  <div class="row design-box">
+  	<div class="categories row" style="margin: 10px">
+	  	<div class="col-sm-10 col-md-10 col-lg-10">
+		  	<strong>categories : </strong>
+		  	<span class="categories">
+		  		<span class="categories">
+		  			<input type="checkbox" name="category" value="jeans"> Jeans
+		  		</span>
+		  		<span class="categories">
+		  			<input type="checkbox" name="category" value="sarees"> Sarees
+		  		</span>
+		  		<span class="categories">
+		  			<input type="checkbox" name="category" value="tops"> Tops
+		  		</span>
+		  		<span class="categories">
+		  			<input type="checkbox" name="category" value="pants"> Pants
+		  		</span>
+		  		<span class="categories">
+		  			<input type="checkbox" name="category" value="tshirts"> Tshirts
+		  		</span>
+		  	</span>
+		  </div>
+		  <div class="col-sm-2 col-md-2 col-lg-2">
+		  	<strong>Price:</strong><span> Low</span> <span>High</span>
+		  </div>
+		</div>
+		<input type='hidden' id='current_page' />
+		<input type='hidden' id='show_per_page' />
+		<div id='content'>
+			<div>
+				
+			</div>
+		</div>
+		<div id='page_navigation'></div>
+	</div>
+  <div class="footer">
+  	<span>&copy; 2016</span>
+  	<span>Contact</span>
+  	<span>Customer Care</span>
+  	<span>Faqs</span>
+  	<span>Shipping & returns</span>
+  	<span>Terms</span>
+  	<span>Privacy</span>
+  	<span>Stockists</span>
+  </div>
+</div>
+
+<script type="text/javascript">
+	$("input:checkbox").change(function(){
+ var group = ":checkbox[name='"+ $(this).attr("name") + "']";
+   if($(this).is(':checked')){
+     $(group).not($(this)).attr("checked",false);
+   }
+    if($(this).is(':checked')){
+   	var links = "https://test-prod-api.herokuapp.com/products?cat="+$(this).val()
+   }
+   else{
+   	var links = "https://test-prod-api.herokuapp.com/products"
+   }
+   $( "#content div p" ).remove();
+   $( "#page_navigation" ).remove();
+   dataLoad(links)
+ });
+</script>
